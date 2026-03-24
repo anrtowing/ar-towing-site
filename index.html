@@ -1,100 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>A&R Towing LLC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-    }
-
-    .hero {
-      height: 100vh;
-      background: url('/truck.png') no-repeat center center/cover;
-      position: relative;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.5);
-    }
-
-    .content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    .logo {
-      width: 180px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-
-    p {
-      font-size: 20px;
-      margin: 10px 0 20px;
-    }
-
-    .btn {
-      background: red;
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-      background: #111;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A&R Towing | Fast Towing & Roadside Assistance</title>
+  <meta name="description" content="A&R Towing provides flatbed towing and roadside assistance across Northern Virginia, Washington, DC, and Maryland." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-
-  <!-- HERO SECTION -->
-  <div class="hero">
-    <div class="overlay"></div>
-
-    <div class="content">
-      <img src="/logo.jpg" class="logo" alt="A&R Towing Logo">
-
-      <h1>A&R TOWING LLC</h1>
-      <p>Fast • Reliable • 24/7 Towing & Roadside Assistance</p>
-      <p>Northern Virginia & DMV Area</p>
-
-      <a href="#" class="btn">Request Service</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#top">A&amp;R Towing</a>
+      <nav class="main-nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#areas">Areas</a>
+        <a href="#request">Request Service</a>
+      </nav>
+      <a class="btn btn-call" href="tel:+1-000-000-0000">Call Now</a>
     </div>
-  </div>
+  </header>
 
-  <!-- SERVICES -->
-  <div class="section">
-    <h2>Our Services</h2>
-    <p>Flatbed Towing • Roadside Assistance • Vehicle Transport</p>
-  </div>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">24/7 TOWING &amp; ROADSIDE ASSISTANCE</p>
+          <h1>Fast, Professional Towing You Can Count On</h1>
+          <p class="hero-text">Serving Northern Virginia, Washington, DC, and Maryland with flatbed towing, lockout service, jump starts, tire changes, and more.</p>
+          <div class="hero-actions">
+            <a class="btn" href="tel:+1-000-000-0000">Call Now</a>
+            <a class="btn btn-outline" href="#request">Request Service</a>
+          </div>
+          <ul class="hero-badges">
+            <li>24/7 Availability</li>
+            <li>Flatbed Towing</li>
+            <li>Fast Response</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <h2>Need Help Now?</h2>
+          <p>Call now for quick dispatch and roadside support.</p>
+          <a class="btn btn-block" href="tel:+1-000-000-0000">Call Dispatch</a>
+          <a class="btn btn-block btn-outline" href="https://square.link/u/yourlink" target="_blank" rel="noopener">Pay Now</a>
+          <p class="small">Update your phone number and Square payment link before publishing.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- ABOUT -->
-  <div class="section">
-    <h2>Why Choose Us?</h2>
-    <p>Professional service, fast response times, and reliable equipment you can trust.</p>
-  </div>
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">OUR SERVICES</p>
+          <h2>Towing &amp; Roadside Help</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Flatbed Towing</h3>
+            <p>Safe transport for cars, SUVs, and light trucks with professional equipment.</p>
+          </article>
+          <article class="card">
+            <h3>Roadside Assistance</h3>
+            <p>Jump starts, tire changes, fuel delivery, and lockout help when you need it.</p>
+          </article>
+          <article class="card">
+            <h3>Recovery Service</h3>
+            <p>Fast response for disabled vehicles, off-road situations, and difficult pickups.</p>
+          </article>
+          <article class="card">
+            <h3>Vehicle Transport</h3>
+            <p>Local transport for customer vehicles, dealership moves, and scheduled tows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section id="about" class="section section-alt">
+      <div class="container split-grid">
+        <div>
+          <p class="eyebrow">WHY CHOOSE US</p>
+          <h2>Reliable Service for Drivers Across the DMV</h2>
+          <p>A&amp;R Towing is focused on fast communication, dependable arrival times, and safe vehicle handling. Whether you need a local tow or roadside help, our goal is to make a stressful situation easier.</p>
+        </div>
+        <div class="check-list">
+          <div>Professional rollback / flatbed service</div>
+          <div>Clear communication and dispatch updates</div>
+          <div>Serving VA, DC, and MD</div>
+          <div>Available day or night</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="areas" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">SERVICE AREA</p>
+          <h2>Proudly Serving</h2>
+        </div>
+        <div class="pill-row">
+          <span>Northern Virginia</span>
+          <span>Arlington</span>
+          <span>Alexandria</span>
+          <span>Fairfax</span>
+          <span>Washington, DC</span>
+          <span>Maryland</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="request" class="section section-alt">
+      <div class="container split-grid">
+        <div>
+          <p class="eyebrow">REQUEST SERVICE</p>
+          <h2>Tell Us What You Need</h2>
+          <p>Use this form as a starting point. Connect it to your email or form service before publishing.</p>
+        </div>
+        <form class="request-form">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Phone
+            <input type="tel" placeholder="Best number to reach you" />
+          </label>
+          <label>
+            Vehicle
+            <input type="text" placeholder="Year, make, model" />
+          </label>
+          <label>
+            Location
+            <input type="text" placeholder="Pickup location" />
+          </label>
+          <label>
+            Service Needed
+            <select>
+              <option>Towing</option>
+              <option>Jump Start</option>
+              <option>Tire Change</option>
+              <option>Lockout</option>
+              <option>Fuel Delivery</option>
+            </select>
+          </label>
+          <label>
+            Details
+            <textarea rows="4" placeholder="Tell us what’s going on"></textarea>
+          </label>
+          <button type="submit" class="btn btn-block">Submit Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>A&amp;R Towing</strong>
+        <p>Fast towing and roadside assistance across Northern Virginia, DC, and Maryland.</p>
+      </div>
+      <div>
+        <p><strong>Phone:</strong> <a href="tel:+1-000-000-0000">(000) 000-0000</a></p>
+        <p><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
